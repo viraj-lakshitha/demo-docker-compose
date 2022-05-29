@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web: # custom names for services
+    build: ./demo-fe
+    ports:
+      - 3000:3000
+  api:
+    build: ./demo-be
+    ports:
+      - 80:80
